@@ -1,0 +1,134 @@
+#cabecalho{
+    background-color: #1b1b1b;
+    width: 100vw;
+    height: 100vh;
+}
+
+#landingNavigation{
+    background-color: #c0c0c0;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+#landingNavigation #landingLogo{
+    display: flex;
+    align-items: center;
+}
+#landingNavigation img{
+    width: 2.5em;
+    margin-right: 20px;
+}
+
+#landingNavigation ol{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#landingNavigation ol li{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5em;
+    transition: 200ms ease-in-out;
+}
+#landingNavigation ol li:hover{
+    background-color: white;
+}
+
+#landingMainText{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: calc(100% / 1.5 - 4em);
+
+}
+
+.primeira{
+    background-image: url(../imagens/primeira_img.jpg);
+}
+.segunda{
+    background-image: url(../imagens/1749555959361.jpg);
+}
+.terceira{
+    background-image: url(../imagens/1749556013214.jpg);
+}
+.quarta{
+    background-image: url(../imagens/1749556152476.jpg);
+}.quinta{
+    background-image: url(../imagens/1749556265346.jpg);
+}
+
+#landingMainText div{
+    bottom: -100px;
+    background-color: #c0c0c0;
+    width: 200px;
+    height: 220px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blur{
+    background-color: #c0c0c0;
+    opacity: 70%;
+    filter: blur(15px);
+    width: 100%;
+    height: 100%;
+}
+
+#tema{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#landingMainText #box{
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.icon_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon_box img{
+    width: 70px;
+}
+
+.icon_box .description_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.icon_box .description_box p{
+    text-align: center;
+}
+
+#landingFooter{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}

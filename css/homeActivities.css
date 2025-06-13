@@ -1,0 +1,226 @@
+@media (max-width: 700px) {
+    #first-activitie img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    #img-description{
+        width: 100%;
+        height: 100%;
+    }
+    #first-activitie{
+        flex-direction: column;
+        padding: 10px;
+
+    }
+    #image-description{
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+    #seta-indicadora{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 100%;
+    }
+    
+    #triangulo{
+        border-top: 127px solid transparent;
+        border-left: 127px solid orange;
+        border-right: 127px solid transparent;
+        border-bottom: 127px solid orange;
+        width: 0;
+        transform: rotate(135deg);
+        position: absolute;
+        top: -156px;
+        left: calc(100% / 2 - 120px);
+    }
+    
+    #retangulo{
+        width: calc(100% - 40px);
+        height: 400px;
+        background-color: orange;
+        position: absolute;
+        top: -30px;
+    }
+    
+    #cauda{
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 180px solid orange;
+        border-top: 70px solid transparent;
+        border-bottom: 0px solid;
+        height: 1px;
+        width: 0px;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 369px;
+        left: calc(100% / 2 - 175px);
+    }
+    
+    #seta-interna{
+        position: relative;
+    }
+    
+    #triangulo-interno{
+        border-top: 127px solid transparent;
+        border-left: 127px solid blueviolet;
+        border-right: 127px solid transparent;
+        border-bottom: 127px solid blueviolet;
+        width: 0;
+        transform: rotate(135deg);
+        position: absolute;
+        top: -163px;
+        left: calc(100% / 2 - 140px);
+    }
+    #retangulo-interno h1{
+        font-size: 2em;
+    }
+    #retangulo-interno p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    #retangulo-interno h1, #retangulo-interno p{
+        color: #fff;
+    }
+    
+    #retangulo-interno{
+        width: calc(100% - 20px);
+        height: 400px;
+        background-color: blueviolet;
+        position: absolute;
+        top: -40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    #cauda-interno{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 176px solid blueviolet;
+        border-top: 70px solid transparent;
+        border-bottom: 0px solid;
+        height: 1px;
+        width: 0px;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 359px;
+    }
+}
+
+@media (min-width: 700px) {
+    
+    #first-activitie{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+    #first-activitie img{
+        width: 500px;
+        height: 100%;
+        border-radius: 20px;
+    }
+    #img-description{
+        width: 500px;
+        height: 100%;
+        position: relative;
+    }
+    
+    #triangulo{
+        border-top: 70px solid transparent;
+        border-left: 70px solid orange;
+        border-right: 70px solid transparent;
+        border-bottom: 70px solid orange;
+        width: 0;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 60px;
+        left: -110px;
+    }
+    
+    #retangulo{
+        width: 400px;
+        height: 200px;
+        background-color: orange;
+        position: absolute;
+        top: 30px;
+        left: -40px;
+    }
+    
+    #cauda{
+        z-index: -10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 100px solid orange;
+        border-top: 70px solid transparent;
+        border-bottom: 0px solid;
+        height: 1px;
+        width: 0px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 95px;
+        right: 5px;
+    }
+    
+    #seta-interna{
+        position: relative;
+    }
+    
+    
+    #triangulo-interno{
+        border-top: 70px solid transparent;
+        border-left: 70px solid blueviolet;
+        border-right: 70px solid transparent;
+        border-bottom: 70px solid blueviolet;
+        width: 0;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 60px;
+        left: -110px;
+    }
+    
+    #retangulo-interno{
+        width: 400px;
+        height: 200px;
+        background-color: blueviolet;
+        position: absolute;
+        top: 30px;
+        left: -40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    #cauda-interno{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 100px solid blueviolet;
+        border-top: 70px solid transparent;
+        border-bottom: 0px solid;
+        height: 1px;
+        width: 0px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 95px;
+        right: -95px;
+    }
+    
+}
+
+

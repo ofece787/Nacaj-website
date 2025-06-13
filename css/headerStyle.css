@@ -1,0 +1,30 @@
+#homePageHeader{
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+#homeLogo{
+    display: flex;
+    align-items: center;
+}
+#homeLogo img{
+    width: 2.5em;
+    margin-right: 20px;
+}
+#homePageHeader nav ol{
+    display: flex;
+    gap: 10px;
+}
+#homePageHeader nav ol li{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    transition: 200ms;
+    
+}
+#homePageHeader nav ol li:hover{
+    background-color: white;
+}

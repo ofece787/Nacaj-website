@@ -1,0 +1,108 @@
+#info{
+    padding-top: 50px;
+}
+#caixa-mae{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#esquerda{
+    border: 15px solid #c0c0c0;
+    height: 1px;
+    width: 100%;
+}
+#direita{
+    border: 15px solid #c0c0c0;
+    height: 1px;
+    width: 100%;
+}
+#caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 50px solid #c0c0c0;
+    border-top: 30px solid transparent;
+    border-bottom: 0px solid;
+    height: 1px;
+    width: 0px;
+
+}
+#mae{
+    position: relative;
+}
+#imagem{
+    background-image: url(../imagens/1749555969642.jpg);
+    width: 100%;
+    height: 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagem div h1,#imagem div p{
+    color: #fff;
+    text-align: center;
+}
+#imagem div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1b1b1b;
+}
+#caixa-topo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#topo{
+    position: absolute;
+    left: 33px;
+    bottom: 20px;
+    border-top: 40px solid transparent;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 40px solid #c0c0c0;
+    height: 1px;
+    width: 0px;
+}
+
+#seta{
+    position: absolute;
+    top: -5px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid #1b1b1b;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid #1b1b1b;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+#seta-topo{
+    position: absolute;
+    border-top: 3px solid transparent;
+    border-left: 3px solid #1b1b1b;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid #1b1b1b;
+    left: 90px;
+    top: -42px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(135deg);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
