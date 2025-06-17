@@ -28,3 +28,28 @@
 #homePageHeader nav ol li:hover{
     background-color: white;
 }
+
+@media (max-width: 700px) {
+    
+    ol{
+        z-index: 1000;
+        position: absolute;
+        top: 4em;
+        right: 0;
+        width: 0%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 200ms ease-in-out;
+    }
+    .extended{
+        width: 100%;
+    } 
+    .retracted{
+        width: 0%;
+    }
+    #menu{
+        z-index: 10000;
+    }
+}

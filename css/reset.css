@@ -5,6 +5,9 @@
     list-style: none;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    background-color: transparent;
 
 }
 

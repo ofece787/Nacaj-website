@@ -1,4 +1,23 @@
+.activities-button{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: solid 2px orange;
+    transition: 100ms ease-in-out;
+}
+.activities-button p{
+    color: #fff;
+}
+
+.activities-button:hover{
+    background-color: transparent;
+}
+#retangulo-interno{
+    color: #fff;
+}
+
 @media (max-width: 700px) {
+
     #first-activitie img{
         width: 100%;
         height: 100%;

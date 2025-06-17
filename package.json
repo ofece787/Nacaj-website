@@ -1,0 +1,12 @@
+{
+  "name": "nacaj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["nacaj", "associacao", "de", "apoio", "criancas", "adolescente", "jovem", "nucleo"],
+  "author": "ofece evaristo da costa",
+  "license": "ISC",
+  "description": "Site da associacao NACAJ (Nucleo de Apoio a Criancas Adolescentes e Jovens"
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacaj</title>
     <link rel="stylesheet" href="css/landingPage.css">
+    <link rel="stylesheet" href="css/headerStyle.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="icones/logoNACAJalinhado.png" type="image/x-icon">
 </head>
@@ -18,15 +19,21 @@
             </div>
 
             <nav>
-                <ol>
-                    <a href="paginas/homePage.html">
+                <ol id="nav-list" class="retracted">
+                    <a href="index.html">
                         <li>Home</li>
+                    </a>
+                    <a href="paginas/homeActivitiesPage.html">
+                        <li>Atividades</li>
                     </a>
                     <a href="paginas/aboutPage.html">
                         <li>About</li>
                     </a>
                 </ol>
             </nav>
+            <button id="menu">
+                <p>click</p>
+            </button>
 
         </section>
 
@@ -61,7 +68,8 @@
         </section>
     </header>
 
-    <script src="javascript/main.js"></script>
+    <script defer src="javascript/main.js"></script>
+    <script defer src="javascript/header.js"></script>
 
 </body>
 </html>

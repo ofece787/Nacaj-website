@@ -3,7 +3,7 @@
 }
 #caixa-mae{
     position: absolute;
-    bottom: 0px;
+    bottom: -0.5px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,9 +26,8 @@
     border: 50px solid #c0c0c0;
     border-top: 30px solid transparent;
     border-bottom: 0px solid;
-    height: 1px;
+    height: 0px;
     width: 0px;
-
 }
 #mae{
     position: relative;
