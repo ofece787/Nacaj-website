@@ -1,6 +1,4 @@
-#info{
-    padding-top: 50px;
-}
+
 #caixa-mae{
     position: absolute;
     bottom: -0.5px;
@@ -31,6 +29,7 @@
 }
 #mae{
     position: relative;
+    margin-bottom: 30px;
 }
 #imagem{
     background-image: url(../imagens/1749555969642.jpg);

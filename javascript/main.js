@@ -1,7 +1,9 @@
 var backImage = document.querySelector('#landingMainText')
 
+
 var list = ["primeira", "segunda", "terceira", "quarta", "quinta"]
 backImage.classList.transition = "ease-in"
+
 
 var i = 0
 function changeBackground() {

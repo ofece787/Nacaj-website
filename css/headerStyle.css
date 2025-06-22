@@ -29,6 +29,13 @@
     background-color: white;
 }
 
+#menu img{
+    width: 30px;
+}
+#menu{
+    cursor: pointer;
+}
+
 @media (max-width: 700px) {
     
     ol{
@@ -52,4 +59,8 @@
     #menu{
         z-index: 10000;
     }
+}
+
+footer p {
+    font-size: 0.8em;
 }

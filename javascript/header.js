@@ -1,6 +1,16 @@
 var navList = document.querySelector('#nav-list')
 var menuButton = document.querySelector('#menu')
 
+window.addEventListener('scroll', retract)
+function retract() {
+    getState = navList.classList[0]
+
+    if(getState == "extended") {
+        menuExtend()
+    }
+}
+
+
 menuButton.addEventListener('click', menuExtend)
 function menuExtend() {
     var className = navList.classList[0]
