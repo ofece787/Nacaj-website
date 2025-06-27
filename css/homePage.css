@@ -8,12 +8,12 @@
     justify-content: center;
 }
 #esquerda{
-    border: 15px solid #c0c0c0;
+    border: 15px solid hsl(0, 0%, 75%);
     height: 1px;
     width: 100%;
 }
 #direita{
-    border: 15px solid #c0c0c0;
+    border: 15px solid hsl(0, 0%, 75%);
     height: 1px;
     width: 100%;
 }
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 50px solid #c0c0c0;
+    border: 50px solid hsl(0, 0%, 75%);
     border-top: 30px solid transparent;
     border-bottom: 0px solid;
     height: 0px;
@@ -43,7 +43,7 @@
     align-items: center;
 }
 #imagem div h1,#imagem div p{
-    color: #fff;
+    color: hsl(0, 0%, 100%);
     text-align: center;
 }
 #imagem div {
@@ -51,7 +51,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #1b1b1b;
+    color: hsl(0, 0%, 11%);
 }
 #caixa-topo{
     position: relative;
@@ -67,7 +67,7 @@
     border-top: 40px solid transparent;
     border-left: 65px solid transparent;
     border-right: 65px solid transparent;
-    border-bottom: 40px solid #c0c0c0;
+    border-bottom: 40px solid hsl(0, 0%, 75%);
     height: 1px;
     width: 0px;
 }
@@ -76,9 +76,9 @@
     position: absolute;
     top: -5px;
     border-top: 3px solid transparent;
-    border-left: 3px solid #1b1b1b;
+    border-left: 3px solid hsl(0, 0%, 11%);
     border-right: 3px solid transparent;
-    border-bottom: 3px solid #1b1b1b;
+    border-bottom: 3px solid hsl(0, 0%, 11%);
     width: 20px;
     height: 20px;
     transform: rotate(-45deg);
@@ -87,9 +87,9 @@
 #seta-topo{
     position: absolute;
     border-top: 3px solid transparent;
-    border-left: 3px solid #1b1b1b;
+    border-left: 3px solid hsl(0, 0%, 11%);
     border-right: 3px solid transparent;
-    border-bottom: 3px solid #1b1b1b;
+    border-bottom: 3px solid hsl(0, 0%, 11%);
     left: 90px;
     top: -42px;
     width: 15px;

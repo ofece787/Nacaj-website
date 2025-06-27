@@ -1,12 +1,12 @@
 .activities-button{
-    background-color: orange;
+    background-color: hsl(39, 100%, 50%);
     border-radius: 20px;
     padding: 10px 20px;
-    border: solid 2px orange;
+    border: solid 2px hsl(39, 100%, 50%);
     transition: 100ms ease-in-out;
 }
 .activities-button p{
-    color: #fff;
+    color: hsl(0, 0%, 100%);
 }
 
 .activities-button:hover{
@@ -36,7 +36,13 @@
         width: 100%;
     }
     .description h1{
+        font-size: 20px;
         margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .description p{
+        font-size: 16px;
+        
     }
     #first-activitie{
         flex-direction: column;
@@ -50,7 +56,7 @@
     
     .conpound{
         border-radius: 20px;
-        background-color: #fff;
+        background-color: hsl(0, 0%, 100%);
     }
 }
 
@@ -95,7 +101,7 @@
     
     .conpound{
         border-radius: 20px;
-        background-color: #fff;
+        background-color: hsl(0, 0%, 100%);
     }    
 }
 
