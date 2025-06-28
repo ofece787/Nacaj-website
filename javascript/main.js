@@ -1,4 +1,6 @@
 var backImage = document.querySelector('#landingMainText')
+var seta = document.querySelector('#seta-para-baixo')
+seta.addEventListener('click', landingScrollDown)
 
 
 var list = ["primeira", "segunda", "terceira", "quarta", "quinta"]
@@ -24,4 +26,11 @@ changeBackground()
 setInterval(() => {
     changeBackground();
 }, 5500);
+
+function landingScrollDown() {
+    window.scrollTo({
+        top: 500,
+        behavior: "smooth"
+    })
+}
 
