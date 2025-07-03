@@ -2,6 +2,7 @@
     background-color: #1b1b1b;
     width: 100%;
     height: 100vh;
+    color: #fff;
 }
 
 #landingNavigation{
@@ -51,17 +52,23 @@
 
 .primeira{
     background-image: url(../imagens/primeira_img.jpg);
+    background-position: top;
 }
 .segunda{
     background-image: url(../imagens/1749555959361.jpg);
+    background-position: top;
 }
 .terceira{
     background-image: url(../imagens/1749556013214.jpg);
+    background-position: top;
 }
 .quarta{
     background-image: url(../imagens/1749556152476.jpg);
-}.quinta{
+    background-position: top;
+}
+.quinta{
     background-image: url(../imagens/1749556265346.jpg);
+    background-position: top;
 }
 
 #landingMainText div{
@@ -138,11 +145,15 @@
     color: white;
 }
 
-#seta-para-baixo{
+.outline{
     position: absolute;
     bottom: 20px;
     left: 50%;
-    translate: -10px;
+    translate: -23px;
+    padding: 15px;
+    border-radius: 50%;
+}
+#seta-para-baixo{
     width: 20px;
     height: 20px;
     border-bottom: 2px solid hsl(0, 100%, 100%);
@@ -155,4 +166,30 @@
 main{
     background: linear-gradient(to bottom, #1b1b1b, #525252);
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+#firstSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#landingDescription{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    line-height: 24px;
+}
+#landingFirstImg img{
+    width: 100%;
+}
+#landingDescription h2{
+    font-size: 30px;
+}
+#landingDescription p{
+    font-size: 20px;
 }

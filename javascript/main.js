@@ -1,5 +1,5 @@
 var backImage = document.querySelector('#landingMainText')
-var seta = document.querySelector('#seta-para-baixo')
+var seta = document.querySelector('.outline')
 seta.addEventListener('click', landingScrollDown)
 
 
