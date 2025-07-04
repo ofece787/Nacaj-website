@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
 }
+#homelogo h2{
+    color: hsl(0, 0%, 100%);
+
+}
 #homeLogo img{
     width: 2.5em;
     margin-right: 20px;
