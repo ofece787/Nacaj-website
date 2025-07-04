@@ -1,7 +1,12 @@
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 .noticia{
     display: flex;
     padding: 10px;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     overflow: hidden;
 }
 
