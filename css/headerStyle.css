@@ -36,6 +36,30 @@
 #menu img{
     width: 30px;
 }
+.hamburguer{
+    position: relative;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+}
+.hamburguer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+}
+.hamburguer::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+}
 #menu{
     cursor: pointer;
 }
