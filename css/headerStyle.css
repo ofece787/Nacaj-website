@@ -22,10 +22,10 @@
 #homePageHeader nav ol{
     display: flex;
     gap: 10px;
+    box-shadow: 0px 2px 0px 0px #e0e0e0;
 }
 #homePageHeader nav ol li{
     padding: 10px 20px 10px 20px;
-    border-radius: 20px;
     transition: 200ms;
     
 }

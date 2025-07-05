@@ -188,8 +188,13 @@ main{
     padding: 20px;
     line-height: 24px;
 }
+#landingFirstImg{
+    width: 100%;
+}
 #landingFirstImg img{
     width: 100%;
+    max-height: 300px;
+    min-height: 200px;
 }
 #landingDescription h2{
     font-size: 28px;
