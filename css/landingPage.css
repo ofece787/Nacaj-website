@@ -168,23 +168,23 @@
 }
 
 main{
-    background: linear-gradient(to bottom, #1b1b1b, #525252);
+    background-color: #fff;
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 60px;
 }
 #firstSection{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 #landingDescription{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 20px;
     line-height: 24px;
 }
