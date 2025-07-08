@@ -29,6 +29,17 @@
     transition: 200ms;
     
 }
+.list-icons{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.list-icons img{
+    width: 30px;
+    height: 30px;
+}
 #homePageHeader nav ol li:hover{
     background-color: hsl(0, 0%, 100%);
 }
