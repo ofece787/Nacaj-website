@@ -97,10 +97,3 @@
     transform: rotate(135deg);
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 100%;
-}

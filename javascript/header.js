@@ -1,5 +1,6 @@
 var navList = document.querySelector('#nav-list')
 var menuButton = document.querySelector('#menu')
+var body = document.querySelector('body')
 
 window.addEventListener('scroll', retract)
 
@@ -9,6 +10,7 @@ function retract() {
     if(getState == "extended") {
         menuExtend()
     }
+
 }
 
 
@@ -25,4 +27,5 @@ function menuExtend() {
     }
     
 }
+
 

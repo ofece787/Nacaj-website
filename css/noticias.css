@@ -12,6 +12,7 @@ main{
 
 .noticia-componentes{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 .noticia-imagem{
@@ -31,14 +32,36 @@ main{
     padding-right: 5px;
 }
 .noticia-texto h2{
-    font-size: 20px;
-}
-.noticia-texto p{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .noticia-texto .texto{
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+
+/*Detalhe das noticias*/
+
+img{
+    width: 100%;
+}
+
+.noticias-detalhadas{
+    padding: 10px;
+}
+.noticia-detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.noticia-detalhes h1{
+    font-size: 20px;
+}
+
+.paragrafos{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
