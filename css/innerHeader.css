@@ -1,0 +1,26 @@
+.seta-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.seta{
+    transform: rotate(45deg);
+    width: 13px;
+    height: 13px;
+    border-bottom: solid 1px #000;
+    border-left: solid 1px #000;
+}
+.seta::after{
+    content: '';
+    position: absolute;
+    top: 3.9px;
+    left: -2.7px;
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+}

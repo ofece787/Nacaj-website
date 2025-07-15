@@ -2,10 +2,6 @@ var backImage = document.querySelector('#landingMainText')
 var seta = document.querySelector('.outline')
 seta.addEventListener('click', landingScrollDown)
 
-var footer = document.querySelector('footer p')
-
-footer.textContent('1234545')
-
 
 var list = ["primeira", "segunda", "terceira", "quarta", "quinta"]
 backImage.classList.transition = "ease-in"
