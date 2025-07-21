@@ -1,12 +1,20 @@
-
+main{
+    padding-bottom: 10px;
+}
+.activities-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .activities-button{
-    background-color: #fff;
+    background-color: hsl(39, 100%, 50%);
     padding: 10px 20px;
-    width: 100%;
+    width: 200px;
+    border-radius: 20px;
     transition: 100ms ease-in-out;
 }
 .activities-button p{
-    color: hsl(39, 100%, 50%);
+    color: hsl(0, 0%, 100%);
     font-size: 18px;
 }
 
