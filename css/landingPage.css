@@ -21,8 +21,7 @@
 }
 #landingLogo h2{
     color: hsl(0, 0%, 100%);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 24px;
 }
 #landingNavigation #landingLogo img{
     width: 2.5em;
