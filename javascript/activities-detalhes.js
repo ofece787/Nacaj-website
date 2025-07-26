@@ -1,10 +1,16 @@
 
 
-let imagemPrincipal = document.querySelectorAll('.item')
+let imagemPrincipal = document.querySelector('.i-principal')
+let imagensAuxiliares = document.querySelectorAll('.item')
 let visualizacao = document.querySelector('.visualizacao')
 let closeButton = document.querySelector('.close-button')
+let backFilter = document.querySelector('.backFilter')
 
-const elemento = imagemPrincipal.forEach(element => {
+imagemPrincipal.addEventListener('click', () => {
+    
+})
+
+const elemento = imagensAuxiliares.forEach(element => {
     element.addEventListener('click', () => {
         let parts = element.innerHTML.split(' ')
         let srcAttr = parts[1].split('"')
@@ -16,14 +22,19 @@ const elemento = imagemPrincipal.forEach(element => {
 
         if(visualizacao.childElementCount > 0) {
             visualizacao.classList.add('.visualizacao-extendida')
+            closeButton.classList.remove('closeNone')
+            visualizacao.style.height = '100%'
+            backFilter.style.height = '100%'
             closeButton.addEventListener('click', () => {
                 console.log('closed')
                 visualizacao.removeChild(img)
                 visualizacao.classList.remove('.visualizacao-extendida')
+                closeButton.classList.add('closeNone')
+                visualizacao.style.height = '0%'
+                backFilter.style.height = '0%'
             })
+
         } else if(visualizacao.childElementCount <= 0) {
-            closeButton.classList.remove('close-button')
-            closeButton.classList.add('closeNone')
         }
         
         
