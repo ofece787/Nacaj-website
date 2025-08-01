@@ -1,9 +1,13 @@
+let imgPrinc = document.querySelector('.visualizacao img')
 
 let imagemPrincipal = document.querySelector('.img-principal')
 let imagensAuxiliares = document.querySelectorAll('.item')
 let visualizacao = document.querySelector('.visualizacao')
 let closeButton = document.querySelector('.close-button')
 let backFilter = document.querySelector('.backFilter')
+
+
+
 
 imagemPrincipal.addEventListener('click', () => {
     const imgSrc = imagemPrincipal.innerHTML.split(' ')
@@ -45,18 +49,23 @@ const elemento = imagensAuxiliares.forEach(element => {
             closeButton.classList.remove('closeNone')
             visualizacao.style.height = '100%'
             backFilter.style.height = '100%'
-            closeButton.addEventListener('click', () => {
+
+
+
+            closeButton.addEventListener('click', () => {+
                 visualizacao.removeChild(img)
                 visualizacao.classList.remove('.visualizacao-extendida')
                 closeButton.classList.add('closeNone')
                 visualizacao.style.height = '0%'
                 backFilter.style.height = '0%'
+
             })
 
         }      
 
     })
 });
+
 
 
 
