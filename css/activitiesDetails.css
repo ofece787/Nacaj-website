@@ -98,22 +98,3 @@
     background-color: black;
     transform: rotate(90deg);
 }
-
-
-.flutuante{
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    position: absolute;
-}
-
-.random{
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    position: absolute;
-}
-
-.none{
-    display: none;
-}

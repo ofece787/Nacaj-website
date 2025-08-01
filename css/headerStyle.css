@@ -2,6 +2,7 @@
     position: relative;
 }
 #homePageHeader{
+    transition: 300ms ease-in-out;
     position: fixed;
     z-index: 100;
     top: 0;
