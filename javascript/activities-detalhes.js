@@ -30,6 +30,13 @@ imagemPrincipal.addEventListener('click', () => {
                 visualizacao.style.height = '0%'
                 backFilter.style.height = '0%'
             })
+            window.addEventListener('scroll', () => {
+                visualizacao.removeChild(imgPr)
+                visualizacao.classList.remove('.visualizacao-extendida')
+                closeButton.classList.add('closeNone')
+                visualizacao.style.height = '0%'
+                backFilter.style.height = '0%'
+            })
 
         }
 })
@@ -52,7 +59,7 @@ const elemento = imagensAuxiliares.forEach(element => {
 
 
 
-            closeButton.addEventListener('click', () => {+
+            closeButton.addEventListener('click', () => {
                 visualizacao.removeChild(img)
                 visualizacao.classList.remove('.visualizacao-extendida')
                 closeButton.classList.add('closeNone')
@@ -61,13 +68,18 @@ const elemento = imagensAuxiliares.forEach(element => {
 
             })
 
+            window.addEventListener('scroll', () => {
+                visualizacao.removeChild(img)
+                visualizacao.classList.remove('.visualizacao-extendida')
+                closeButton.classList.add('closeNone')
+                visualizacao.style.height = '0%'
+                backFilter.style.height = '0%'
+            })
+
+
+
         }      
 
     })
 });
-
-
-
-
-
 
