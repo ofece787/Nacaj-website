@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="css/headerStyle.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="icones/logoNACAJalinhado.png" type="image/x-icon">
+    <script src="src/index.js"></script>
+    <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Cs Fs Pe Rs Ms capture Ve calculateEventProperties Ds register register_once register_for_session unregister unregister_for_session zs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty js As createPersonProfile Ns Is Us opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Os debug I Ls getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_uhgPmVbQvahqrdLkqPHYCxS78dgXY1FuBy5aukHrGX0', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,7 +25,7 @@
 
     <header id="cabecalho">
         
-        <section id="landingNavigation"  class="header-visible">
+        <section id="landingNavigation">
             <div id="landingLogo">
                 <img src="icones/logoNACAJalinhado.png" alt="">
                 <h2>NACAJ</h2>
@@ -25,23 +34,23 @@
             <nav>
                 <ol id="nav-list" class="retracted">
                     <a href="index.html">
-                        <div class="list-icons">
-                            <img src="icones/dashboard_16181907.png" alt="">
-                            <li>Página Inicial</li>
-                        </div>
-                    </a>
-                    <a href="paginas/homeActivitiesPage.html">
-                        <div class="list-icons">
-                            <img src="icones/checklist_7111148.png" alt="">
-                            <li>Atividades</li>
-                        </div>
-                    </a>
-                    <a href="paginas/noticiasPage.html">
-                        <div class="list-icons">
-                            <img src="icones/world_2298220.png" alt="">
-                            <li>Noticias</li>
-                        </div>
-                    </a>
+                    <li class="list-icons">
+                        <img src="icones/dashboard_16181907.png" alt="">
+                        <p>Página Inicial</p>
+                    </li>
+                </a>
+                <a href="paginas/homeActivitiesPage.html">
+                    <li class="list-icons">
+                        <img src="icones/checklist_7111148.png" alt="">
+                        <p>Atividades</p>
+                    </li>
+                </a>
+                <a href="paginas/noticiasPage.html">
+                    <li class="list-icons">
+                        <img src="icones/world_2298220.png" alt="">
+                        <p>Noticias</p>
+                    </li>
+                </a>
                 </ol>
             </nav>
             <button id="menu">
@@ -55,7 +64,7 @@
             </section>
             <section id="tema">
                 <h1>Bem-vindo</h1>
-                <p>Nós somos NACAJ uma orgnização sem fins lucrativos de personalidade jurídica.</p>
+                <p>Nós somos NACAJ</p>
             </section>
             <div id="box">
                 <div class="icon_box">

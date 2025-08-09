@@ -29,7 +29,7 @@ setInterval(() => {
 
 function landingScrollDown() {
     window.scrollTo({
-        top: 500,
+        top: 300,
         behavior: "smooth"
     })
 }

@@ -50,10 +50,12 @@
     justify-content: center;
 }
 .backFilter{
+    transition: 100ms;
+    z-index: 999;
     position: absolute;
     top: 0;
     opacity: 0.9;
-    background-color: #c0c0c0;
+    background-color: #1b1b1b;
     width: 100%;
     filter: blur(1px);
 }
@@ -96,4 +98,9 @@
     height: 2px;
     background-color: black;
     transform: rotate(90deg);
+}
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }

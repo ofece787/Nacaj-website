@@ -9,6 +9,7 @@ let backFilter = document.querySelector('.backFilter')
 
 
 
+
 imagemPrincipal.addEventListener('click', () => {
     const imgSrc = imagemPrincipal.innerHTML.split(' ')
     const srcImgAttr = imgSrc[1].split('"')
@@ -21,21 +22,34 @@ imagemPrincipal.addEventListener('click', () => {
     if(visualizacao.childElementCount > 0) {
             visualizacao.classList.add('.visualizacao-extendida')
             closeButton.classList.remove('closeNone')
-            visualizacao.style.height = '100%'
-            backFilter.style.height = '100%'
+            visualizacao.style.height = '100vh'
+            backFilter.style.height = '100vh'
             closeButton.addEventListener('click', () => {
-                visualizacao.removeChild(imgPr)
-                visualizacao.classList.remove('.visualizacao-extendida')
-                closeButton.classList.add('closeNone')
-                visualizacao.style.height = '0%'
-                backFilter.style.height = '0%'
+                if(visualizacao.contains(imgPr)) {
+                    visualizacao.removeChild(imgPr)
+                    visualizacao.classList.remove('.visualizacao-extendida')
+                    closeButton.classList.add('closeNone')
+                    visualizacao.style.height = '0%'
+                    backFilter.style.height = '0%'
+                }
             })
             window.addEventListener('scroll', () => {
-                visualizacao.removeChild(imgPr)
-                visualizacao.classList.remove('.visualizacao-extendida')
-                closeButton.classList.add('closeNone')
-                visualizacao.style.height = '0%'
-                backFilter.style.height = '0%'
+                if(visualizacao.contains(imgPr)) {
+                    visualizacao.removeChild(imgPr)
+                    visualizacao.classList.remove('.visualizacao-extendida')
+                    closeButton.classList.add('closeNone')
+                    visualizacao.style.height = '0%'
+                    backFilter.style.height = '0%'
+                }
+            })
+            backFilter.addEventListener('click', () => {
+                if(visualizacao.contains(imgPr)) {
+                    visualizacao.removeChild(imgPr)
+                    visualizacao.classList.remove('.visualizacao-extendida')
+                    closeButton.classList.add('closeNone')
+                    visualizacao.style.height = '0%'
+                    backFilter.style.height = '0%'
+                }
             })
 
         }
@@ -60,24 +74,34 @@ const elemento = imagensAuxiliares.forEach(element => {
 
 
             closeButton.addEventListener('click', () => {
-                visualizacao.removeChild(img)
-                visualizacao.classList.remove('.visualizacao-extendida')
-                closeButton.classList.add('closeNone')
-                visualizacao.style.height = '0%'
-                backFilter.style.height = '0%'
+                if(visualizacao.contains(img)) {
+                    visualizacao.removeChild(img)
+                    visualizacao.classList.remove('.visualizacao-extendida')
+                    closeButton.classList.add('closeNone')
+                    visualizacao.style.height = '0%'
+                    backFilter.style.height = '0%'
+                }
 
+            })
+            backFilter.addEventListener('click', () => {
+                if(visualizacao.contains(img)) {
+                    visualizacao.removeChild(img)
+                    visualizacao.classList.remove('.visualizacao-extendida')
+                    closeButton.classList.add('closeNone')
+                    visualizacao.style.height = '0%'
+                    backFilter.style.height = '0%'
+                }
             })
 
             window.addEventListener('scroll', () => {
-                visualizacao.removeChild(img)
-                visualizacao.classList.remove('.visualizacao-extendida')
-                closeButton.classList.add('closeNone')
-                visualizacao.style.height = '0%'
-                backFilter.style.height = '0%'
+                if(visualizacao.contains(img)) {
+                    visualizacao.removeChild(img)
+                    visualizacao.classList.remove('.visualizacao-extendida')
+                    closeButton.classList.add('closeNone')
+                    visualizacao.style.height = '0%'
+                    backFilter.style.height = '0%'
+                }
             })
-
-
-
         }      
 
     })
