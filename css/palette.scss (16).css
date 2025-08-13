@@ -1,0 +1,18 @@
+/* Coolors Exported Palette - https://coolors.co/f0a202-f18805-d95d39-202c59-581f18 */
+:root{
+
+    /* CSS HEX */
+    --gamboge: #f0a202ff;
+    --tangerine: #f18805ff;
+    --cinnabar: #d95d39ff;
+    --space-cadet: #202c59ff;
+    --caput-mortuum: #581f18ff;
+    
+    /* CSS HSL */
+    --gamboge: hsla(40, 98%, 47%, 1);
+    --tangerine: hsla(33, 96%, 48%, 1);
+    --cinnabar: hsla(13, 68%, 54%, 1);
+    --space-cadet: hsla(227, 47%, 24%, 1);
+    --caput-mortuum: hsla(7, 57%, 22%, 1);
+}
+

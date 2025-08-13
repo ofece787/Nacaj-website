@@ -1,3 +1,11 @@
+:root{
+    /* CSS HSL */
+    --gamboge: hsla(40, 98%, 47%, 1);
+    --tangerine: hsla(33, 96%, 48%, 1);
+    --cinnabar: hsla(13, 68%, 54%, 1);
+    --space-cadet: hsla(227, 47%, 24%, 1);
+    --caput-mortuum: hsla(7, 57%, 22%, 1);
+}
 main{
     display: flex;
     flex-direction: column;

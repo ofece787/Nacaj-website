@@ -1,5 +1,16 @@
+:root{
+    /* CSS HSL */
+    --gamboge: hsla(40, 98%, 47%, 1);
+    --tangerine: hsla(33, 96%, 48%, 1);
+    --cinnabar: hsla(13, 68%, 54%, 1);
+    --space-cadet: hsla(227, 47%, 24%, 1);
+    --caput-mortuum: hsla(7, 57%, 22%, 1);
+}
 .cabecalho{
     position: relative;
+}
+.homelogo h2{
+    color: #fff;
 }
 #homePageHeader{
     transition: 300ms ease-in-out;
@@ -8,7 +19,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: hsl(0, 0%, 75%);
+    background-color: var(--caput-mortuum);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,7 +166,7 @@ footer{
 .botao-voltar-cima{
     display: flex;
     justify-content: center;
-    background-color: #c0c0c0;
+    background-color: var(--gamboge);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -166,7 +177,7 @@ footer{
     height: 10px;
     transform: rotate(135deg);
     position: absolute;
-    top: 12px;
-    border-left: solid 2px #1b1b1b;
-    border-bottom: solid 2px #1b1b1b;
+    top: 14px;
+    border-left: solid 2px var(--space-cadet);
+    border-bottom: solid 2px var(--space-cadet);
 }

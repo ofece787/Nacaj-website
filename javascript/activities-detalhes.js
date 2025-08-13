@@ -7,9 +7,13 @@ let closeButton = document.querySelector('.close-button')
 let backFilter = document.querySelector('.backFilter')
 
 
+//Funcao complicada que estiver a ler isto por favor melhore este codigo ou qualquer outro neste projecto
 
-
-
+//Funcao responsavel por mostrar a imagem principal em tela cheia nos detalhes das atividades
+//Principais funcionalidades
+// - Mostrar a imagem em tela cheia
+// - Embacar o painel de fundo para nao atrapalhar o usuario
+// - Fechar a amostragem em tela cheia da imagem pelo click ou rolagem da pagina
 imagemPrincipal.addEventListener('click', () => {
     const imgSrc = imagemPrincipal.innerHTML.split(' ')
     const srcImgAttr = imgSrc[1].split('"')
@@ -55,6 +59,11 @@ imagemPrincipal.addEventListener('click', () => {
         }
 })
 
+//Funcao responsavel por mostrar as imagens secundarias em tela cheia nos detalhes das atividades
+//Principais funcoes:
+// - Mostrar cada uma das iamgens secundarias em tela cheia
+// - Embacar o painel de fundo para nao distrair o usuario
+// - Fechar a amostragem em tela cheia atraves do click ou rolagem da pagina
 const elemento = imagensAuxiliares.forEach(element => {
     element.addEventListener('click', () => {
         let parts = element.innerHTML.split(' ')
