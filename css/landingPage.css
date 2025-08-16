@@ -5,6 +5,7 @@
     --cinnabar: hsla(13, 68%, 54%, 1);
     --space-cadet: hsla(227, 47%, 24%, 1);
     --caput-mortuum: hsla(7, 57%, 22%, 1);
+    --gamboge-tenue: rgb(230, 169, 49);
 }
 #cabecalho{
     background-color: #1b1b1b;
@@ -43,8 +44,7 @@
 }
 
 #landingNavigation ol li{
-    padding: 10px 20px 10px 20px;
-    border-radius: 5em;
+    padding: 20px;
     transition: 200ms ease-in-out;
 }
 

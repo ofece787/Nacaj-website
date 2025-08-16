@@ -5,6 +5,7 @@
     --cinnabar: hsla(13, 68%, 54%, 1);
     --space-cadet: hsla(227, 47%, 24%, 1);
     --caput-mortuum: hsla(7, 57%, 22%, 1);
+    --gamboge-tenue: rgb(230, 169, 49);
 }
 .cabecalho{
     position: relative;
@@ -69,6 +70,9 @@ main{
     }
     .list-icons{
         gap: 20px;
+    }
+    .active{
+        background-color: var(--gamboge);
     }
     .list-icons img{
         width: 60px;
@@ -205,13 +209,18 @@ footer{
         flex-direction: column;
         width: 190px;
     }
+    .list-icons span{
+        background-color: var(--tangerine);
+        transition: .5s;
+        height: 2px;
+    }
     .list-icons:hover span{
         width: 100%;
     }
-    .list-icons span{
-        background-color: var(--tangerine);
+    .active span{
+        width: 100%;
+    }
+    .inactive span{
         width: 0%;
-        height: 2px;
-        transition: .5s;
     }
 }
