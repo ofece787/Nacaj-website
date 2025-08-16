@@ -6,10 +6,25 @@
     --space-cadet: hsla(227, 47%, 24%, 1);
     --caput-mortuum: hsla(7, 57%, 22%, 1);
 }
-.grid{
+@media (max-width: 700px) {
+    .grid{
     display: flex;
     gap: 2px;
     height: 200px;
+    width: 100%;
+}
+.img-auxiliares{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 25%;
+    height: 200px;
+    overflow: scroll;
+}
+}
+.grid{
+    display: flex;
+    gap: 2px;
     width: 100%;
 }
 
@@ -26,7 +41,6 @@
     flex-direction: column;
     gap: 1px;
     width: 25%;
-    height: 200px;
     overflow: scroll;
 }
 .img-auxiliares img{

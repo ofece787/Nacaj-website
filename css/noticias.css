@@ -11,11 +11,16 @@ main{
     flex-direction: column;
 }
 .noticia{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(0, 0%, 100%);
-    border-bottom: 1px solid #000;
+        display: flex;
+        background-color: hsl(0, 0%, 100%);
+        border-bottom: 1px solid #000;
+    }
+@media (max-width: 700px) {
+    
+    .noticia{
+        align-items: center;
+        justify-content: center;
+    }
 }
 ul{
     padding-left: 30px;

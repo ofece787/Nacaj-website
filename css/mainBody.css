@@ -1,0 +1,28 @@
+
+@media (min-width: 700px) {
+
+    .firstSection .landingFirstImg{
+        width: 50%;
+    }
+    .firstSection .landingFirstImg img{
+        width: 100%;
+    }
+    .landingDescription{
+        width: 50%;
+    }
+
+    .info{
+        padding-left: 14%;
+        padding-right: 14%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .noticia{
+        width: 100%;
+    }
+    .noticia-link{
+        width: 100%;
+    }
+}
