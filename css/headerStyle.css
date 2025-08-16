@@ -10,7 +10,7 @@
 .cabecalho{
     position: relative;
 }
-.homelogo h2{
+#homeLogo h1{
     color: #fff;
 }
 #homePageHeader{

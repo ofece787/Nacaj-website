@@ -196,6 +196,8 @@
 main{
     background-color: #fff;
     color: #fff;
+}
+.info{
     display: flex;
     flex-direction: column;
     gap: 60px;
