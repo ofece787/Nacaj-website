@@ -78,17 +78,21 @@
 .segunda{
     background-image: url(../imagens/1749555959361.jpg);
     background-position: top;
+    background-size: cover;
 }
 .terceira{
     background-image: url(../imagens/1749556013214.jpg);
     background-position: top;
+    background-size: cover;
 }
 .quarta{
     background-image: url(../imagens/1749556152476.jpg);
     background-position: top;
+    background-size: cover;
 }
 .quinta{
     background-image: url(../imagens/1749556265346.jpg);
+    background-size: cover;
     background-position: top;
 }
 
@@ -209,11 +213,11 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 10px;
     }
-    .landingFirstImg img{
+    .landingFirstImg{
         width: 100%;
-        max-height: 300px;
-        min-height: 200px;
+        height: 300px;
     }
     .landingDescription{
         display: flex;
@@ -221,9 +225,6 @@ main{
         gap: 10px;
         padding: 20px;
         line-height: 24px;
-    }
-    .landingFirstImg{
-        width: 100%;
     }
     .landingDescription h2{
         font-size: 28px;
@@ -247,6 +248,10 @@ main{
     .firstSection{
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        box-shadow: #c0c0c0 0px 0px 20px 10px;
+        padding: 10px;
+        border-radius: 10px;
     }
     #landingNavigation ol li{
         color: #fff;
@@ -254,13 +259,30 @@ main{
     #landingNavigation ol li:hover{
         color: #000;
     }
-    .landingFirstImg img{
-        max-height: 300px;
-        width: 400px;
+    .landingFirstImg{
+        height: 240px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
     }
     .landingDescription{
         display: flex;
         flex-direction: column;
+        gap: 20px;
         line-height: 24px;
+        padding-right: 20px;
+        padding-left: 14px;
+    }
+
+    .video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+    }
+    iframe{
+        height: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 10px;
     }
 }
