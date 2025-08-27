@@ -64,7 +64,7 @@
     background-position: top;
     background-size: cover;
     animation-name: backanimation;
-    animation-duration: 200ms;
+    animation-duration: 500ms;
 }
 
 @keyframes backanimation {
@@ -79,21 +79,29 @@
     background-image: url(../imagens/1749555959361.jpg);
     background-position: top;
     background-size: cover;
+    animation-name: backanimation;
+    animation-duration: 500ms;
 }
 .terceira{
     background-image: url(../imagens/1749556013214.jpg);
     background-position: top;
     background-size: cover;
+    animation-name: backanimation;
+    animation-duration: 500ms;
 }
 .quarta{
     background-image: url(../imagens/1749556152476.jpg);
     background-position: top;
     background-size: cover;
+    animation-name: backanimation;
+    animation-duration: 500ms;
 }
 .quinta{
     background-image: url(../imagens/1749556265346.jpg);
     background-size: cover;
     background-position: top;
+    animation-name: backanimation;
+    animation-duration: 500ms;
 }
 
 #landingMainText div{
@@ -175,7 +183,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px;
+}
+#landingFooter p{
     color: white;
 }
 
@@ -200,6 +209,7 @@
 main{
     background-color: #fff;
     color: #fff;
+    padding-bottom: 14px;
 }
 .info{
     display: flex;

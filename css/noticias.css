@@ -9,6 +9,7 @@
 main{
     display: flex;
     flex-direction: column;
+    padding-bottom: 14px;
 }
 .noticia{
     display: flex;
@@ -56,6 +57,40 @@ main{
     .noticia{
         align-items: center;
         justify-content: center;
+    }
+    .noticia-atual{
+        width: 100%;
+    }
+    .noticia-atual section{
+        background: linear-gradient(to top, #1b1b1b, transparent 85%);
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        display: flex;
+    }
+    .noticia-atual .noticia-componentes{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        padding: 14px;
+        color: #fff;
+    }
+    .noticia-atual .texto h2, .noticia-atual .texto p{
+        color: #fff;
+    }
+    .noticia-atual .texto p{
+        font-size: .9em;
+    }
+    .backImage{
+        background: url('../imagens/nacaj fascin subsidio.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
     }
 }
 ul{
