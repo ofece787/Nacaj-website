@@ -8,120 +8,235 @@
 }
 @media (max-width: 700px) {
     .grid{
-    display: flex;
-    gap: 2px;
-    height: 200px;
-    width: 100%;
+        display: flex;
+        gap: 2px;
+        height: 200px;
+        width: 100%;
+    }
+    .img-auxiliares{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 25%;
+        height: 200px;
+        overflow: scroll;
+    }
+    .grid{
+        display: flex;
+        gap: 2px;
+        width: 100%;
+    }
+    
+    .img-principal{
+        display: flex;
+    
+    }
+    .img-principal img{
+        width: 100%;
+    }
+    
+    .img-auxiliares{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 25%;
+        overflow: scroll;
+    }
+    .img-auxiliares img{
+        display: flex;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .backGaleria{
+        position: relative;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .backGroundGallery{
+        z-index: 10000;
+        position: relative;
+        position: absolute;
+        height: 100%;
+    }
+    .visualizacao{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .backFilter{
+        transition: 100ms;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        opacity: 0.9;
+        background-color: #1b1b1b;
+        width: 100%;
+        filter: blur(1px);
+    }
+    .visualizacao img{
+        z-index: 1000;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        left: 0;
+    }
+    
+    .x-button{
+        width: 25px;
+        height: 2px;
+        background-color: black;
+        border: solid 1px #1b1b1b;
+        transform: rotate(45deg);
+    }
+    .close-button{
+        display: flex;
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50%;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        background-color: #e7e7e7;
+    }
+    .closeNone{
+        display: none;
+    }
+    .x-button::after{
+        content: '';
+        position: absolute;
+        top: -1px;
+        width: 23px;
+        height: 2px;
+        background-color: black;
+        transform: rotate(90deg);
+    }
+    .detalhes{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
 }
-.img-auxiliares{
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    width: 25%;
-    height: 200px;
-    overflow: scroll;
-}
-}
-.grid{
-    display: flex;
-    gap: 2px;
-    width: 100%;
-}
-
-.img-principal{
-    display: flex;
-
-}
-.img-principal img{
-    width: 100%;
-}
-
-.img-auxiliares{
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    width: 25%;
-    overflow: scroll;
-}
-.img-auxiliares img{
-    display: flex;
-    height: fit-content;
-    width: 100%;
-}
-
-.backGaleria{
-    position: relative;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.backGroundGallery{
-    z-index: 10000;
-    position: relative;
-    position: absolute;
-    height: 100%;
-}
-.visualizacao{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.backFilter{
-    transition: 100ms;
-    z-index: 999;
-    position: absolute;
-    top: 0;
-    opacity: 0.9;
-    background-color: #1b1b1b;
-    width: 100%;
-    filter: blur(1px);
-}
-.visualizacao img{
-    z-index: 1000;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    left: 0;
-}
-
-.x-button{
-    width: 25px;
-    height: 2px;
-    background-color: black;
-    border: solid 1px #1b1b1b;
-    transform: rotate(45deg);
-}
-.close-button{
-    display: flex;
-    z-index: 10000;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    border-radius: 50%;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-    background-color: #e7e7e7;
-}
-.closeNone{
-    display: none;
-}
-.x-button::after{
-    content: '';
-    position: absolute;
-    top: -1px;
-    width: 23px;
-    height: 2px;
-    background-color: black;
-    transform: rotate(90deg);
-}
-.detalhes{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
+@media (min-width: 700px) {
+    .grid{
+        display: flex;
+        gap: 2px;
+        height: 400px;
+        width: 100%;
+    }
+    .img-auxiliares{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 25%;
+        height: 400px;
+        overflow: scroll;
+    }
+    .img-principal{
+        display: flex;
+    
+    }
+    .img-principal img{
+        width: 100%;
+    }
+    
+    .img-auxiliares{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 25%;
+        overflow: scroll;
+    }
+    .img-auxiliares img{
+        display: flex;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .backGaleria{
+        position: relative;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .backGroundGallery{
+        z-index: 10000;
+        position: relative;
+        position: absolute;
+        height: 100%;
+    }
+    .visualizacao{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .backFilter{
+        transition: 100ms;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+        background-color: #1b1b1b;
+        width: 100%;
+        filter: blur(1px);
+    }
+    .visualizacao img{
+        z-index: 1000;
+        position: absolute;
+        display: flex;
+        left: 0;
+    }
+    
+    .x-button{
+        width: 25px;
+        height: 2px;
+        background-color: black;
+        border: solid 1px #1b1b1b;
+        transform: rotate(45deg);
+    }
+    .close-button{
+        display: flex;
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50%;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        background-color: #e7e7e7;
+    }
+    .closeNone{
+        display: none;
+    }
+    .x-button::after{
+        content: '';
+        position: absolute;
+        top: -1px;
+        width: 23px;
+        height: 2px;
+        background-color: black;
+        transform: rotate(90deg);
+    }
+    .detalhes{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
 }
