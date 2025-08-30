@@ -151,7 +151,8 @@ main{
     }
     .footerDescription{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 14px;
         justify-content: space-between;
         width: 100%;
@@ -217,10 +218,27 @@ main{
     color: #fff;
 
 }
-.socialMedias{
+.listaParceiros{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+}
+.listaParceiros a{
+    background-color: var(--tangerine);
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+}
+.parceirosNames{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.listaParceiros img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 .socialMedia{
     display: flex;
@@ -231,6 +249,11 @@ main{
 .socialMedia img{
     height: 1.2em;
     width: 1.3em;
+}
+.footerBlocks{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 footer p{
     color: #fff;
@@ -275,7 +298,9 @@ footer p{
     }
     .footerDescription{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        gap: 20px;
         width: 100%;
     }
     .footerDescription h3, .footerDescription p{
