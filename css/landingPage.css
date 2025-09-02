@@ -172,6 +172,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: var(--cinnabar) 0px 0px 10px;
     }
     
     .icon_box{
@@ -273,6 +274,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: var(--cinnabar) 0px 0px 10px;
     }
     
     .icon_box{
@@ -298,7 +300,7 @@ main{
         color: #fff;
     }
     .icon_box .description_box h1{
-        font-size: 1.8em;
+        font-size: 1.6em;
         text-align: center;
         color: #fff;
     }
