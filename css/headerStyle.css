@@ -225,7 +225,7 @@ main{
     gap: 8px;
 }
 .listaParceiros .verMais{
-    background-color: var(--tangerine);
+    background-color: var(--space-cadet);
     border-radius: 20px;
     color: #fff;
     padding: 5px 10px;
@@ -258,6 +258,15 @@ main{
 }
 footer p{
     color: #fff;
+    letter-spacing: 1px;
+}
+.enderecoBlock{
+    display: flex;
+    gap: 8px;
+}
+.enderecoBlock img{
+    height: 1.2em;
+    width: 1.3em;
 }
 @media (min-width: 700px) {
     .list-icons{
