@@ -244,8 +244,9 @@ main{
 .socialMedia{
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 2px;
+    padding: 8px;
+    border: solid #fff 1px;
+    border-radius: 50%;
 }
 .socialMedia img{
     height: 1.2em;
@@ -267,6 +268,10 @@ footer p{
 .enderecoBlock img{
     height: 1.2em;
     width: 1.3em;
+}
+.socialIcons{
+    display: flex;
+    gap: 8px;
 }
 @media (min-width: 700px) {
     .list-icons{
