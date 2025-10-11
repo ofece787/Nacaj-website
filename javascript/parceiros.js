@@ -3,13 +3,13 @@ let botaoExpansorParceiros = document.querySelectorAll('.seta-parceiro-expansor'
 
 botaoExpansorParceiros.forEach(element => {
     element.addEventListener('click', () => {
-        if(element.parentElement.classList.contains('blue') == true){
-            element.parentElement.classList.remove('blue')
+        let parent = element.parentElement
+        if(parent.parentElement.classList.contains('blue') == true){
+            parent.parentElement.classList.remove('blue')
 
         } else{
 
-            element.parentElement.classList.add('blue')
-            console.log(botaoExpansorParceiros.entries())
+            parent.parentElement.classList.add('blue')
         }
 
     })

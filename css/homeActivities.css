@@ -113,6 +113,7 @@ main{
     }
     .description h1{
         color: #fff;
+        font-size: 1em;
     }
     .activitie{
         flex-direction: column;
