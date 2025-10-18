@@ -47,6 +47,10 @@ main{
     height: 100%;
     overflow: scroll;
 }
+.parceirosConteudo p{
+    color: #fff;
+    font-size: 14px;
+}
 
 h2{
     font-size: 1em;
