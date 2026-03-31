@@ -6,6 +6,8 @@
     --space-cadet: hsla(227, 47%, 24%, 1);
     --caput-mortuum: hsla(7, 57%, 22%, 1);
 }
+
+
 @media (max-width: 700px) {
     .grid{
         display: flex;
