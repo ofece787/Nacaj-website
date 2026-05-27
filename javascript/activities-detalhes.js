@@ -24,10 +24,10 @@ imagemPrincipal.addEventListener('click', () => {
     visualizacao.appendChild(imgPr)
 
     if(visualizacao.childElementCount > 0) {
-            visualizacao.classList.add('.visualizacao-extendida')
             closeButton.classList.remove('closeNone')
-            visualizacao.style.height = '100vh'
-            backFilter.style.height = '100vh'
+            visualizacao.style.height = '100%'
+            backFilter.style.height = '100%' 
+            visualizacao.style.display = 'flex'
             closeButton.addEventListener('click', () => {
                 if(visualizacao.contains(imgPr)) {
                     visualizacao.removeChild(imgPr)

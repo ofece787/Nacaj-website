@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACAJ | Noticias</title>
+    <link rel="shortcut icon" href="../icones/logoNACAJalinhado.png" type="image/x-icon">
+</head>
+<body>
+
+    
+
+    <main>
+            
+        <section class="news">
+
+        </section>
+    </main>
+
+
+    <script>
+        let news = document.querySelector('.news')
+
+        async function buscarDados() {
+        try {
+            const response = await fetch('http://localhost:3000/newsdisplayjson');
+
+            if (!response.ok) {
+            throw new Error("Error");
+            
+            }
+            const data = await response.json();
+            console.log(data)
+            data.forEach(element => {
+                const image = document.createElement('img');
+                const description = document.createElement('p');
+                const title = document.createElement('h2');
+                console.log(element.title)
+                typeof(element)
+                title.innerText = element.title
+                image.src = `http://localhost:3000/imagens/${element.url}`
+                description.innerText = element.description
+                news.appendChild(title)
+                news.appendChild(image)
+                news.appendChild(description)
+            });
+            /*data.forEach(element => {
+            const extension = element.split('.').pop()
+            console.log(extension)
+            if(extension == 'mp3'){
+
+                const audio = document.createElement('audio');
+                typeof(element)
+                audio.src = `http://localhost:3000/imagens/${element}`
+                audio.controls = true
+                list.appendChild(audio)
+            }
+            else if(extension == 'mp4'){
+
+                const video = document.createElement('video');
+                typeof(element)
+                video.src = `http://localhost:3000/imagens/${element}`
+                video.controls = true
+                list.appendChild(video)
+            }
+            else if(extension == 'png'){
+
+                const image = document.createElement('img');
+                const description = document.createElement('p');
+                typeof(element)
+                image.src = `http://localhost:3000/imagens/${element}`
+                description.innerText = element
+                list.appendChild(image)
+                list.appendChild(description)
+            } 
+            });*/
+        } catch (error) {
+            if(error){
+
+            console.error('error' + error.message)
+            const errorDisplay = document.createElement('h2')
+            errorDisplay.innerText = 'Arquivos nao encontrados'
+            list.appendChild(errorDisplay)
+            }
+            
+        }
+        }
+
+        buscarDados()
+    </script>
+</body>
+</html>

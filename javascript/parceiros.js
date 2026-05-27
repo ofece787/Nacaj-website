@@ -6,9 +6,7 @@ botaoExpansorParceiros.forEach(element => {
         let parent = element.parentElement
         if(parent.parentElement.classList.contains('blue') == true){
             parent.parentElement.classList.remove('blue')
-
         } else{
-
             parent.parentElement.classList.add('blue')
         }
 

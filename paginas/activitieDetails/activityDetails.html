@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NACAJ | Noticias</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
     <link rel="shortcut icon" href="../../icones/logoNACAJalinhado.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/noticias.css">
-    <link rel="stylesheet" href="../../css/innerHeader.css">
+    <link rel="stylesheet" href="../../css/activitiesDetails.css">
     <link rel="stylesheet" href="../../css/headerStyle.css">
+    <link rel="stylesheet" href="../../css/innerHeader.css">
     <link rel="stylesheet" href="../../css/mainBody.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script defer src="../../javascript/header.js"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script defer src="../../javascript/header.js"></script>
 </head>
 <body>
-
-    <header>
+  <header>
         <section id="homePageHeader"  class="header-visible">
-            <a href="../noticiasPage.html">
+            <a href="../homeActivitiesPage.html">
                 <div class="seta-back">
                     <div class="seta"></div>
                 </div>
@@ -66,39 +64,31 @@
         </section>
     </header>
 
-    <main>
-        <section class="info">
-            <img src="../../imagens/nacaj e aeul.jpg" alt="">
-            <section class="noticias-detalhadas">
-                <div class="noticia-detalhes">
-                    <h1 id="main-title">
-                        NACAJ e AEUL promovem capacitação sobre liderança e activismo juvenil na Universidade Licungo
-                    </h1>
-                    <div class="paragrafos">
-                        <p>
-                            No dia 19 de Julho, sábado, o NACAJ (Núcleo de Apoio as Crianças, Adolescentes e Jovens – Quelimane), em parceria com a AEUL (Associação dos Estudantes da Universidade Licungo), realizou uma capacitação no Auditório Bloco II da Universidade Licungo.
-                        </p>
-                        <p>
-                            O evento teve como tema central “História do NACAJ e Activismo Comunitário Juvenil, Liderança e Responsabilidade Social na Comunidade”. A sessão foi oficialmente aberta pelo Presidente Distrital do NACAJ, Onorio Da Silva, e pelo Presidente da AEUL.
-                        </p>
-                        <p>
-                            A primeira parte da capacitação foi conduzida pelo Presidente Fundador do NACAJ, Justino Isac, que apresentou a trajectória da organização, sua missão e impacto junto as comunidades. Em seguida, o orador Naldo Arnaldo liderou uma intervenção dinâmica sobre o papel da juventude no activismo, na liderança comunitária e na construção de uma sociedade mais participativa.
-                        </p>
-                        <p>
-                            Segundo Naldo Arnaldo, “Hoje em dia, muitos jovens dão mais  desculpas do que as causas. É importante estarmos focados e comprometidos com as causas sociais”. A sua fala despertou os participantes uma reflexão profunda sobre o papel transformador da juventude na sociedade.
-                        </p>
-                        <p>
-                            O evento reuniu mais de 24 participantes  dos quais representantes das associações juvenis da cidade de Quelimane e de Namacurra. A capacitação teve como principal objectivo despertar a consciência cívica dos jovens, incentivando a acção social e a formação de verdadeiros agentes de mudança.
-                        </p>
-                        <p>
-                            Num ambiente inspirador e produtivo, os participantes reforçaram o compromisso com os valores da liderança, solidariedade e cidadania activa.
-                        </p>
+
+  <main>
+    <section class="info">
+        <section class="detalhes-atividades">
+            <div class="detalhes">
+                <h1 class="titulo">Comemoracao do 1 de Junho</h1>
+                <section class="grid">
+                    <div class="img-principal">
                     </div>
+                    <div class="backFilter">
+                    </div>
+                    <div class="visualizacao">
+                    </div>
+                    <div class="close-button closeNone">
+                        <div class="x-button"></div>
+                    </div>
+                </section>
+                <div class="paragrafos">
                 </div>
-            </section>
+            </div>
         </section>
-    </main>
-    <footer>
+    </section>
+  </main>
+
+  <footer>
         <section class="footerDescription">
             <div class="parceiros footerBlocks">
                 <h3>Parceiros</h3>
@@ -158,5 +148,44 @@
         </section>
     </footer>
 
+
+
+  <script>
+    
+    async function getData() {
+      const paragrafos= document.querySelector('.paragrafos')
+      const h1= document.querySelector('.titulo')
+      const pageTitle= document.querySelector('title')
+      const image= document.querySelector('.img-principal')
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const title = urlParams.get('title')
+      try {
+        const res = await fetch(`http://localhost:3000/activitydetails/${title}`)
+
+        const data = res.json()
+        .then(result => {
+          const dr = result.description.split('\r\n').map(para => `<p>${para.replace('\r\n', '<br>')}</p>`).join('')
+
+          h1.textContent = result.title
+          pageTitle.textContent = result.title
+          result.url.forEach(element => {
+            const img = document.createElement('img')
+            img.src = `http://localhost:3000/imagens/${element}`
+            image.appendChild(img)
+          });
+          paragrafos.innerHTML = dr
+        })
+
+        
+      } catch (error) {
+        
+      }
+    }
+
+    getData()
+
+  </script>
+  
 </body>
 </html>

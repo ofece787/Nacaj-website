@@ -43,6 +43,14 @@ main{
     color: #fff;
     font-size: 14px;
 }
+.description h1{
+    color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 @media (max-width: 700px) {
     #info{
@@ -68,10 +76,6 @@ main{
     }
     .description{
         display: flex;
-    }
-    .description h1{
-        color: #fff;
-        font-weight: bold;
     }
     .conpound{
         display: flex;
