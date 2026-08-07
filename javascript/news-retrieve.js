@@ -67,4 +67,4 @@ console.log(noticiaLink)
   }
   }
 
-  buscarDados()
+//buscarDados()

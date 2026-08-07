@@ -74,4 +74,4 @@ console.log(activitiesLink)
   }
   }
 
-  buscarDados()
+  //buscarDados()

@@ -1,7 +1,7 @@
 let imgPrinc = document.querySelector('.visualizacao img')
 
-let imagemPrincipal = document.querySelector('.img-principal')
-let imagensAuxiliares = document.querySelectorAll('.item')
+let imagemPrincipal = document.querySelector('.imagem')
+let imagens = document.querySelectorAll('.img-principal img')
 let visualizacao = document.querySelector('.visualizacao')
 let closeButton = document.querySelector('.close-button')
 let backFilter = document.querySelector('.backFilter')
@@ -14,26 +14,41 @@ let backFilter = document.querySelector('.backFilter')
 // - Mostrar a imagem em tela cheia
 // - Embacar o painel de fundo para nao atrapalhar o usuario
 // - Fechar a amostragem em tela cheia da imagem pelo click ou rolagem da pagina
-imagemPrincipal.addEventListener('click', () => {
-    const imgSrc = imagemPrincipal.innerHTML.split(' ')
-    const srcImgAttr = imgSrc[1].split('"')
 
-    let imgPr = document.createElement('img')
-    imgPr.setAttribute('src', srcImgAttr[1])
+imagens.forEach(item => {
+    item.addEventListener('click', () => {
+        imagemPrincipal.setAttribute('src', item.getAttribute('src'))
+        visualizacao.style.height = '100vh'
+        backFilter.style.height = '100%' 
+        if(imagemPrincipal.clientHeight > imagemPrincipal.clientWidth) {
+           // imagemPrincipal.style.height = '100%'
+        } else {
+           // imagemPrincipal.style.width = '100%'
 
-    visualizacao.appendChild(imgPr)
+        }
+        
+        closeButton.classList.remove('closeNone')
+        closeButton.addEventListener('click', () => {
+            if(imagemPrincipal.getAttribute('src') == item.getAttribute('src')) {
+                imagemPrincipal.setAttribute('src', '')
+                visualizacao.style.height = '0%'
+                backFilter.style.height = '0%' 
+                closeButton.classList.add('closeNone')
+            } else {
+                console.log('different')
+            }
+        })
+        
+    })
+})
+/*imagemPrincipal.addEventListener('click', () => {
 
     if(visualizacao.childElementCount > 0) {
-            closeButton.classList.remove('closeNone')
-            visualizacao.style.height = '100%'
-            backFilter.style.height = '100%' 
             visualizacao.style.display = 'flex'
             closeButton.addEventListener('click', () => {
                 if(visualizacao.contains(imgPr)) {
                     visualizacao.removeChild(imgPr)
                     visualizacao.classList.remove('.visualizacao-extendida')
-                    closeButton.classList.add('closeNone')
-                    visualizacao.style.height = '0%'
                     backFilter.style.height = '0%'
                 }
             })
@@ -58,61 +73,4 @@ imagemPrincipal.addEventListener('click', () => {
 
         }
 })
-
-//Funcao responsavel por mostrar as imagens secundarias em tela cheia nos detalhes das atividades
-//Principais funcoes:
-// - Mostrar cada uma das iamgens secundarias em tela cheia
-// - Embacar o painel de fundo para nao distrair o usuario
-// - Fechar a amostragem em tela cheia atraves do click ou rolagem da pagina
-const elemento = imagensAuxiliares.forEach(element => {
-    element.addEventListener('click', () => {
-        let parts = element.innerHTML.split(' ')
-        let srcAttr = parts[1].split('"')
-        
-        let img = document.createElement('img')
-        img.setAttribute('src', srcAttr[1])
-        
-        visualizacao.appendChild(img)
-
-        if(visualizacao.childElementCount > 0) {
-            visualizacao.classList.add('.visualizacao-extendida')
-            closeButton.classList.remove('closeNone')
-            visualizacao.style.height = '100%'
-            backFilter.style.height = '100%'
-
-
-
-            closeButton.addEventListener('click', () => {
-                if(visualizacao.contains(img)) {
-                    visualizacao.removeChild(img)
-                    visualizacao.classList.remove('.visualizacao-extendida')
-                    closeButton.classList.add('closeNone')
-                    visualizacao.style.height = '0%'
-                    backFilter.style.height = '0%'
-                }
-
-            })
-            backFilter.addEventListener('click', () => {
-                if(visualizacao.contains(img)) {
-                    visualizacao.removeChild(img)
-                    visualizacao.classList.remove('.visualizacao-extendida')
-                    closeButton.classList.add('closeNone')
-                    visualizacao.style.height = '0%'
-                    backFilter.style.height = '0%'
-                }
-            })
-
-            window.addEventListener('scroll', () => {
-                if(visualizacao.contains(img)) {
-                    visualizacao.removeChild(img)
-                    visualizacao.classList.remove('.visualizacao-extendida')
-                    closeButton.classList.add('closeNone')
-                    visualizacao.style.height = '0%'
-                    backFilter.style.height = '0%'
-                }
-            })
-        }      
-
-    })
-});
-
+*/

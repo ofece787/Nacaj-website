@@ -137,14 +137,14 @@ main{
     
     .firstSection{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
     .landingFirstImg{
         width: 100%;
-        height: 300px;
+        height: 100%;
     }
     .landingDescription{
         display: flex;
@@ -217,6 +217,9 @@ main{
     }
 }
 
+.landingFirstImg{
+    height: 300px;
+}
 @media (min-width: 700px) {
     #landingMainText{
         height: calc(100% / 1.5 - 4em);
@@ -242,8 +245,7 @@ main{
     }
     .landingFirstImg{
         height: 240px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
+        border-radius: 10px;
     }
     .landingDescription{
         display: flex;
@@ -313,4 +315,24 @@ main{
         font-size: 1.2em;
         letter-spacing: 1px;
     }
+}
+
+.parceiros-slide{
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 150px;  
+    display: flex;
+    overflow: scroll; 
+}
+.parceiros-slide::-webkit-scrollbar{
+    display: none;
+}
+.carousel{
+    display: flex;
+}
+.cards{
+    background-color: aqua;
+    width: 160px;
+    height: 140px;
+    margin-right: 14px;
 }
