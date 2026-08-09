@@ -245,7 +245,7 @@ main{
     }
     .landingFirstImg{
         height: 240px;
-        border-radius: 10px;
+        border-radius: 8px;
     }
     .landingDescription{
         display: flex;

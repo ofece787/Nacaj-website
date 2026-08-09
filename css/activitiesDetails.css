@@ -45,6 +45,9 @@
     justify-content: center;
 }
 .backFilter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: 1ms;
     z-index: 999;
     position: absolute;
@@ -57,10 +60,7 @@
 }
 .visualizacao img{
     z-index: 1000;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    left: 0;
+    height: 100%;
 }
 
 .x-button{
@@ -98,6 +98,13 @@
 .detalhes{
     display: flex;
     flex-direction: column;
+    gap: 14px;
     padding: 15px;
     position: relative
+}
+
+.paragrafos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

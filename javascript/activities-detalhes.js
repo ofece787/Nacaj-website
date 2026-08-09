@@ -31,7 +31,7 @@ imagens.forEach(item => {
         closeButton.addEventListener('click', () => {
             if(imagemPrincipal.getAttribute('src') == item.getAttribute('src')) {
                 imagemPrincipal.setAttribute('src', '')
-                visualizacao.style.height = '0%'
+                visualizacao.style.height = '0vh'
                 backFilter.style.height = '0%' 
                 closeButton.classList.add('closeNone')
             } else {
@@ -39,38 +39,16 @@ imagens.forEach(item => {
             }
         })
         
+        window.addEventListener('scroll', () => {
+            if(imagemPrincipal.getAttribute('src') == item.getAttribute('src')) {
+                imagemPrincipal.setAttribute('src', '')
+                visualizacao.style.height = '0vh'
+                backFilter.style.height = '0%' 
+                closeButton.classList.add('closeNone')
+            } else {
+                console.log('different')
+            }
+            
+        })
     })
 })
-/*imagemPrincipal.addEventListener('click', () => {
-
-    if(visualizacao.childElementCount > 0) {
-            visualizacao.style.display = 'flex'
-            closeButton.addEventListener('click', () => {
-                if(visualizacao.contains(imgPr)) {
-                    visualizacao.removeChild(imgPr)
-                    visualizacao.classList.remove('.visualizacao-extendida')
-                    backFilter.style.height = '0%'
-                }
-            })
-            window.addEventListener('scroll', () => {
-                if(visualizacao.contains(imgPr)) {
-                    visualizacao.removeChild(imgPr)
-                    visualizacao.classList.remove('.visualizacao-extendida')
-                    closeButton.classList.add('closeNone')
-                    visualizacao.style.height = '0%'
-                    backFilter.style.height = '0%'
-                }
-            })
-            backFilter.addEventListener('click', () => {
-                if(visualizacao.contains(imgPr)) {
-                    visualizacao.removeChild(imgPr)
-                    visualizacao.classList.remove('.visualizacao-extendida')
-                    closeButton.classList.add('closeNone')
-                    visualizacao.style.height = '0%'
-                    backFilter.style.height = '0%'
-                }
-            })
-
-        }
-})
-*/
