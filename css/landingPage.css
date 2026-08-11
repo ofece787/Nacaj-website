@@ -336,3 +336,84 @@ main{
     height: 140px;
     margin-right: 14px;
 }
+.directors-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+.directors-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    width: 100%;
+}
+.caixa-do-meio {
+    background-color: var(--caput-mortuum);
+    padding: 2px;
+    border-radius: 20px;
+    width: 100%;
+}
+.caixa-do-meio div{
+    padding: 4px 12px;
+    background-color: var(--gamboge);
+    border-radius: 20px;
+}
+.caixa-do-meio div h2{
+    font-size: 1em;
+    color: var(--caput-mortuum);
+    text-align: center;
+}
+.primeira-linha {
+    height: 2px;
+    width: 100%;
+    background-color: var(--caput-mortuum);
+}
+.segunda-linha {
+    height: 2px;
+    width: 100%;
+    background-color: var(--caput-mortuum);
+}
+.directionMembers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 100%;
+}
+.directionMembers .directors-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+.directionMembers .directors-div .back-directors{
+    background-color: var(--gamboge);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.directionMembers .directors-div img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.director-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.directionMembers .directors-div h1 {
+    font-size: 1em;
+    color: var(--caput-mortuum);
+}
+.directionMembers .directors-div p {
+    font-size: .9em;
+}

@@ -9,6 +9,7 @@
 main{
     display: flex;
     flex-direction: column;
+    gap: 14px;
     padding-bottom: 14px;
 }
 .noticia{
@@ -17,6 +18,10 @@ main{
     border-bottom: 1px solid #000;
 }
 @media (min-width: 700px) {
+    .news{
+        padding-left: 14%;
+        padding-right: 14%;
+    }
     
     .noticia-atual{
         width: 100%;
@@ -53,6 +58,8 @@ main{
     }
 }
 @media (max-width: 700px) {
+
+    
     
     .noticia{
         align-items: center;
