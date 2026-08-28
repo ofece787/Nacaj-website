@@ -4,8 +4,8 @@ let landingImagesDiv = document.querySelectorAll('.landingFirstImg')
 
 let images = [
     '../imagens/trezentos4.jpg',
-    '../imagens/1749555969642.jpg',
-    '../imagens/1749556013214.jpg',
+    '../imagens/umdejunhonamacata11.jpg',
+    '../imagens/umdejunhomocuba.jpg',
     '../imagens/1749555964931.jpg',
     '../imagens/1749556013214.jpg'
 ]

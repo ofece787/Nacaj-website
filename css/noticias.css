@@ -24,6 +24,7 @@ main{
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-transform: uppercase;
     }
     .noticia .texto .not {
         display: -webkit-box;
@@ -79,6 +80,7 @@ main{
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-transform: uppercase;
     }
     .noticia .texto .not {
         display: -webkit-box;
